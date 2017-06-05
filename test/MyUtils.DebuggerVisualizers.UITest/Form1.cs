@@ -3,8 +3,10 @@ using MyUtils.DebuggerVisualizers.CollectionVisualizer;
 using MyUtils.DebuggerVisualizers.DataSetVisualizer;
 using MyUtils.DebuggerVisualizers.KeyValueVisualizer;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -85,6 +87,11 @@ namespace MyUtils.DebuggerVisualizers.UITest
             };
 
             Utils.ShowVisualizer<KeyValueVisualizerDialog, KeyValueVisualizerObjectSource>(obj);
+        }
+
+        private void NameValueVisualizerDialogButton_Click(object sender, EventArgs e)
+        {
+            Utils.ShowVisualizer<KeyValueVisualizerDialog, KeyValueVisualizerObjectSource>(ConfigurationManager.AppSettings);
         }
     }
 }

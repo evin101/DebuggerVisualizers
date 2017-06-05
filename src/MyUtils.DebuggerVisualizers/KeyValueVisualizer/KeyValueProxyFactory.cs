@@ -1,6 +1,7 @@
 ﻿using MyUtils.DebuggerVisualizers.Internal;
 using System;
 using System.Collections;
+using System.Collections.Specialized;
 using System.Data;
 using System.Linq;
 using System.Reflection;
@@ -25,6 +26,19 @@ namespace MyUtils.DebuggerVisualizers.KeyValueVisualizer
             DataTable table = new DataTable(target.GetType().GetCSharpType());
             table.Columns.Add("Key");
             table.Columns.Add("Value");
+
+            if (target is NameValueCollection nvc)
+            {
+                foreach (string key in nvc.AllKeys)
+                {
+                    var row = table.NewRow();
+                    row["Key"] = key;
+                    row["Value"] = nvc[key];
+                    table.Rows.Add(row);
+                }
+                table.AcceptChanges();
+                return table;
+            }
 
             if (target is IEnumerable enumerableObject)
             {

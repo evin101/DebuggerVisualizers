@@ -31,6 +31,7 @@
             this.CollectionVisualizerDialogButton = new System.Windows.Forms.Button();
             this.DataSetVisualizerDialogButton = new System.Windows.Forms.Button();
             this.KeyValueVisualizerDialogButton = new System.Windows.Forms.Button();
+            this.NameValueVisualizerDialogButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CollectionVisualizerDialogButton
@@ -63,11 +64,22 @@
             this.KeyValueVisualizerDialogButton.UseVisualStyleBackColor = true;
             this.KeyValueVisualizerDialogButton.Click += new System.EventHandler(this.KeyValueVisualizerDialogButton_Click);
             // 
+            // NameValueVisualizerDialogButton
+            // 
+            this.NameValueVisualizerDialogButton.Location = new System.Drawing.Point(12, 165);
+            this.NameValueVisualizerDialogButton.Name = "NameValueVisualizerDialogButton";
+            this.NameValueVisualizerDialogButton.Size = new System.Drawing.Size(265, 45);
+            this.NameValueVisualizerDialogButton.TabIndex = 3;
+            this.NameValueVisualizerDialogButton.Text = "KeyValueVisualizerDialog\r\nNameValueCollection";
+            this.NameValueVisualizerDialogButton.UseVisualStyleBackColor = true;
+            this.NameValueVisualizerDialogButton.Click += new System.EventHandler(this.NameValueVisualizerDialogButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 434);
+            this.Controls.Add(this.NameValueVisualizerDialogButton);
             this.Controls.Add(this.KeyValueVisualizerDialogButton);
             this.Controls.Add(this.DataSetVisualizerDialogButton);
             this.Controls.Add(this.CollectionVisualizerDialogButton);
@@ -85,6 +97,7 @@
         private System.Windows.Forms.Button CollectionVisualizerDialogButton;
         private System.Windows.Forms.Button DataSetVisualizerDialogButton;
         private System.Windows.Forms.Button KeyValueVisualizerDialogButton;
+        private System.Windows.Forms.Button NameValueVisualizerDialogButton;
     }
 }
 
