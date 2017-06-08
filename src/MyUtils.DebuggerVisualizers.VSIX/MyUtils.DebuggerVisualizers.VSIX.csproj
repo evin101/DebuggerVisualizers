@@ -44,8 +44,8 @@
     <ProjectGuid>{99B07107-05CB-4818-BA75-BC225D172B20}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VSIX</RootNamespace>
-    <AssemblyName>VSIX</AssemblyName>
+    <RootNamespace>MyUtils.DebuggerVisualizers</RootNamespace>
+    <AssemblyName>MyUtils.DebuggerVisualizers</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
